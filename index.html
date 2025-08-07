@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vôlei Sem Limite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>VÔLEI SEM LIMITE</h1>
+    <nav>
+      <a href="#hero">Início</a>
+      <a href="#info">Sobre</a>
+      <a href="#posicoes">Posições</a>
+      <a href="#cadastro">Contato</a>
+      <a href="#registro">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Apresentação do site">
+      <div class="hero-text">
+        <h2>Vôlei Sem Limite</h2>
+        <p>Descubra as melhores técnicas, dicas e a paixão pelo vôlei com uma energia vibrante e sem fronteiras.</p>
+        <button class="btn-primary" onclick="alert('Obrigado por visitar!')">Saiba Mais</button>
+      </div>
+      <div class="hero-img">
+        <img src="volei.jpg" alt="Jogadores jogando vôlei na quadra" />
+      </div>
+      
+    </section>
+
+    <section class="info" id="info" aria-label="Informações do site">
+      <article class="card">
+        <h3>Técnicas Avançadas</h3>
+        <p>Aprenda os golpes e estratégias que vão elevar seu nível no vôlei, desde o saque até a defesa.</p>
+      </article>
+      <article class="card">
+        <h3>Dicas e Treinos</h3>
+        <p>Receba dicas exclusivas e planos de treino para melhorar sua resistência e agilidade.</p>
+      </article>
+      <article class="card">
+        <h3>Comunidade</h3>
+        <p>Conecte-se com outros apaixonados por vôlei e participe de eventos e campeonatos.</p>
+      </article>
+    </section>
+
+    <section class="posicoes" id="posicoes" aria-label="Sobre cada posição no vôlei">
+      <h2>Sobre Cada Posição</h2>
+      <div class="info">
+        <article class="card">
+          <h3>Levantador(a)</h3>
+          <p>Responsável por organizar o ataque, fazendo os passes para os atacantes. Precisa ter boa visão de jogo e agilidade.</p>
+        </article>
+        <article class="card">
+          <h3>Central</h3>
+          <p>Especialista em bloqueios e ataques rápidos no meio da rede. É importante para a defesa e para surpreender o adversário.</p>
+        </article>
+        <article class="card">
+          <h3>Ponteiro</h3>
+          <p>Ataca pela lateral da quadra e participa da defesa. Versátil, deve ter boa técnica e resistência.</p>
+        </article>
+        <article class="card">
+          <h3>Oposto</h3>
+          <p>Principal atacante da equipe, joga na posição oposta ao levantador. Atua tanto no ataque quanto na defesa.</p>
+        </article>
+        <article class="card">
+          <h3>Líbero</h3>
+          <p>Especialista em defesa, não pode atacar ou sacar, mas é fundamental para recepções e cobertura na defesa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cadastro" aria-label="Formulário de contato">
+      <h2>Fale Conosco</h2>
+      <p>Quer saber mais? Envie sua mensagem!</p>
+      <form action="#" method="post" onsubmit="alert('Mensagem enviada!'); return false;">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </section>
+
+    <section id="registro" aria-label="Formulário de cadastro">
+      <h2>Cadastro</h2>
+      <p>Faça seu cadastro para receber novidades exclusivas!</p>
+      <form action="#" method="post" onsubmit="alert('Cadastro realizado com sucesso!'); return false;">
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="password" name="senha" placeholder="Senha" required minlength="6" />
+        <input type="password" name="confirmaSenha" placeholder="Confirme a senha" required minlength="6" />
+        <button type="submit" class="btn-primary">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vôlei Sem Limite. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
